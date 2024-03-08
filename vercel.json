@@ -1,6 +1,11 @@
 {
   "version": 2,
-  
+  "builds": [
+    { "src": "smartnotes/wsgi.py", 
+      "use": "@vercel/python",
+      "config":{"maxLambdaSize": "15mh", "runtime": "python3.9" }
+  }
+  ],
   "routes": [
     
     { "src": "/(.*)", "dest": "smartnotes/wsgi.py" }
