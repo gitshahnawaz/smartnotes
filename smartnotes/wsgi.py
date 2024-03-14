@@ -15,4 +15,4 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "smartnotes.settings")
 
 application = get_wsgi_application()
 
-app = applicatiaon
+app = application
